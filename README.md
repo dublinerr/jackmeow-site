@@ -39,15 +39,15 @@ Connect this public website repository in Cloudflare Pages using Git integration
 | Build output directory | `/` (repository root) |
 | Root directory | Leave empty (repository root) |
 
-Add `csachin.dev` as a custom domain when ready. Publication and domain setup are manual actions; this change does not deploy anything. Do not configure R2 or a downloads subdomain for v1.
+Add `csachin.dev` as a custom domain when ready. Publication and domain setup are manual actions; this change does not deploy anything. Public binaries are hosted at `https://downloads.csachin.dev/`; Homebrew Cask is the normal macOS installation path.
 
 Canonical URLs and Open Graph URLs use the intended production origin `https://csachin.dev` as a pre-launch placeholder. Before publication, confirm that origin and update these URLs together if it changes. The 404 page uses `noindex` and intentionally has no canonical URL. Social metadata uses text summaries; image metadata is omitted until a genuine approved asset is supplied. Protect preview deployments with Cloudflare's access controls or indexing settings as appropriate before sharing them.
 
 ## Product claims and assets
 
-The supplied v0.2.1 product facts are the copy baseline: macOS Apple Silicon / arm64 is Developer ID signed and Apple notarized, with public Homebrew distribution coming soon. Linux ARM64 is available as a stable Snap Store release with `sudo snap install jackmeow`. No unsupported platform or future download URL is advertised. Confirm release status before publishing future updates.
+The supplied v0.2.1 product facts are the copy baseline: macOS Apple Silicon / arm64 is Developer ID signed and Apple notarized, with public Homebrew Cask installation available via `brew install --cask dublinerr/tap/jackmeow`. Linux ARM64 is available as a stable Snap Store release with `sudo snap install jackmeow`. No unsupported platform is advertised. Confirm release status before publishing future updates.
 
-Still needed: an approved Jack Meow logo, sanitized real product screenshots, and the finalized macOS Homebrew distribution URL/instructions. The current site works without those assets.
+Still needed: an approved Jack Meow logo and sanitized real product screenshots. The current site works without those assets.
 
 ## Privacy and security rules
 
