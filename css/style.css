@@ -749,6 +749,18 @@ nav>a:hover {
 .site-footer p {
   margin-top:6px
 }
+.site-footer .developer-credit {
+  margin-top:14px
+}
+.developer-credit strong {
+  color:var(--text);
+  font-weight:500;
+  white-space:nowrap
+}
+.developer-credit span {
+  display:block;
+  font-size:.75rem
+}
 .site-footer nav {
   gap:23px;
   flex-wrap:wrap
